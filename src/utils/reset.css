@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*样式重置 reset */
+*{ margin:0; padding:0; }
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, input,figure{
+    margin:0;/*去掉自带外间距*/
+    padding:0;/*去掉自带内填充*/
+}
+em, i，address{
+    font-style:normal;/*斜体扶正*/
+}
+li{
+    list-style:none;/*去掉默认列表符*/
+}
+h1, h2, h3, h4, h5, h6, b, strong{
+    font-weight:normal;/*去掉标题自带加粗*/
+}
+a{
+    outline:none;/*去掉描边*/
+    text-decoration:none;/*去掉自带下划线*/
+}
+img{
+    border:none;/*去掉ie浏览器图片外面的边框*/
+    vertical-align:top;/*图片对齐方式*/
+}
+table{
+    border-collapse:collapse;/*去掉表格自带间隙*/
+    border-spacing:0;
+}
+input{
+    outline:none;
+    border:none;
+    background-color:transparent;/*背景色透明*/
+}
+textarea{
+    outline:none;
+    resize:none;/*禁止调整文本域尺寸*/
+    overflow:auto;/*在浏览器默认状态下没有滚动条*/
+}
+body{
+    /* font-family:Arial,"微软雅黑", Helvetica, sans-serif; */
+    font-size:14px;
+}
+
+
+
+/*public style*/
+.clearfix{
+    zoom:1;/*IE浏览器清浮动*/
+}
+.clearfix:after{
+    content:'';/*添加一个空内容*/
+    display:block;/*转块*/
+    clear:both;/*清浮动*/
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+/*全局滚动条样式*/
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  /*正常情况下滑块的样式*/
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    -webkit-box-shadow: inset1px1px0rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在该类指向的控件上时滑块的样式*/
+  :hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    -webkit-box-shadow: inset1px1px0rgba(0, 0, 0, 0.1);
+  }
+  /*鼠标悬浮在滑块上时滑块的样式*/
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset1px1px0rgba(0, 0, 0, 0.1);
+  }
+  /*正常时候的主干部分*/
+  ::-webkit-scrollbar-track {
+    border-radius: 7px;
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0);
+    background-color: (0, 0, 0, 0.5);
+    display: none;
+  }
+  /*鼠标悬浮在滚动条上的主干部分*/
+  ::-webkit-scrollbar-track:hover {
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.01);
+  }
